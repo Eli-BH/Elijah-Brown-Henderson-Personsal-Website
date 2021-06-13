@@ -165,3 +165,114 @@ body {
   height: 400px;
   width: 650px;
 }
+
+.mobile {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  margin-top: -5px;
+  width: 100%;
+  display: none;
+}
+
+.mobile ul {
+  background-color: rgb(207, 73, 73);
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 40px;
+}
+
+.mobile li {
+  color: #777;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.mobile ul li p {
+  font-size: 12px;
+  margin: 2px 0;
+  color: white;
+  text-decoration: none;
+}
+
+.mobile ul li:hover,
+.mobile ul li.active {
+  color: #8e44ad;
+}
+
+@media screen and (max-width: 1920px) {
+  .project {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .project-wrapper {
+    width: 98%;
+  }
+
+  .project-text p {
+    font-size: 18px;
+  }
+
+  #project-vid,
+  #project-img {
+    height: 350px;
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .project-wrapper {
+    flex-direction: column;
+  }
+
+  .project-text p {
+    font-size: 24px;
+    width: 100%;
+  }
+  #project-vid,
+  #project-img {
+    height: 200px;
+    width: 350px;
+  }
+
+  .project-text {
+    width: 98%;
+    margin-top: 20px;
+  }
+
+  .header h1 {
+    font-size: 35px;
+  }
+  .project {
+    height: 100vh;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header {
+    margin: 0;
+  }
+
+  .project-text p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 760px) {
+  .project-text p {
+    font-size: 12px;
+    width: 100%;
+  }
+}
