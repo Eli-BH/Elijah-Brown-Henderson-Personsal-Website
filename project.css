@@ -155,3 +155,13 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
 }
+
+#project-img {
+  height: 400px;
+  width: 650px;
+}
+
+#project-vid {
+  height: 400px;
+  width: 650px;
+}
